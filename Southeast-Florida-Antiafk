@@ -15,7 +15,8 @@ TextLabel.TextSize = 14.000
 TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextWrapped = true
 
-game.Players.LocalPlayer.Idled:Connect(function()
+game:service'Players'.LocalPlayer.Idled:connect(function()
+game:service('VirtualUser'):CaptureController()bb:ClickButton2(Vector2.new())
 end)
 
 local afkScript = game.Players.LocalPlayer.PlayerScripts:FindFirstChild("afkEnable")
