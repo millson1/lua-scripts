@@ -16,8 +16,9 @@ TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextWrapped = true
 
 game.Players.LocalPlayer.Idled:Connect(function()
-    local afkScript = game.Players.LocalPlayer.PlayerScripts:FindFirstChild("afkEnable")
-    if afkScript then
-        afkScript:Destroy()
-    end
 end)
+
+local afkScript = game.Players.LocalPlayer.PlayerScripts:FindFirstChild("afkEnable")
+if afkScript then
+    afkScript:Destroy()
+end
